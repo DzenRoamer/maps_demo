@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
   _MyHomePageState() {
     _latController.text = _lat.toString();
     _longController.text = _long.toString();
-    _zController.text = _z.toString();
+    _zController.text = _z.toInt().toString();
   }
 
   void _loadTile() {
@@ -117,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _longController.text = _long.toString();
 
       _z = 19;
-      _zController.text = _z.toString();
+      _zController.text = _z.toInt().toString();
     });
   }
 
